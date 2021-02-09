@@ -1,0 +1,6 @@
+
+TODOS:
+
+- Write some stuff
+
+- I should find out how to enter the university server with SSH.
