@@ -30,12 +30,14 @@ all functions.
 7. Write two functions that run alternately. One, called a, divides the value
    obtained as a parameter by 2 and then calls function b with the result if it
 is greater than 0. Function b subtracts 1 from the value obtained and then
-calls t with the reduced value if it is even greater as 0. Ask the user for the
+calls a with the reduced value if it is even greater as 0. Ask the user for the
 starting number and count how many ab iterations occur until it reaches 0.
 
 8. Calculate what percentage power is obtained if we score 17 out of a possible
    20 (whole division problem - let's discuss how good it will be and how the
 result will be 0).
+
+9. Try operator chaining: `(a <b <c)`.
 
 ## Optional
 
