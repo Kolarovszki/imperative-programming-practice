@@ -25,12 +25,20 @@ why the file remains the same.
    given element can be found. If the given element is found, stop the loop
 (using 'break').
 
+Example:
+
+Input: [3, 4, 5, 6, 7], search term: 6 --> Output: 3 (because 6 is the 3th element)
+
 9. Write a 'toLowerCase' function. the function should get a character array,
    and each capital letter (you can find determine whether a character is a
 capital letter, using the ASCII table) and change it to its equivalent
 lower-case letter! After this, output to the console which letter was changed.
 If a character does not need to be changed, then skip that element (using
 'continue').
+
+Example:
+
+toLowerCase("lowercase string") -> "LOWERCASE STRING"
 
 10. Lets write a LOG-INFO-WARNING-ERROR function. The first parameter should be
     a positive integer, which indicates the nature of the printed message
@@ -39,6 +47,8 @@ parameter should be the message. Using switch-case, determine what should be
 printed before our message. (i.e.: "LOG - user signed in.", "ERROR - could not
 connect to server."). Demonstrate what happens if we do not use the "break"
 inside each case. Demonstrate what happens if we do not write a default branch.
+
+Google "switch-case statement in C"!
 
 # Optional tasks
 
