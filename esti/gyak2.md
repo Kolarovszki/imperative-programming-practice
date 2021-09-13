@@ -4,19 +4,19 @@
 
 ### Kötelező feladatok
 
-1. - Nézzük végig, értelmezzük az alábbi fájlokat:
-    - 1-shock.c
-    - 2-base-types.c
-    - 4-conversion.c
-2. - Deklarálj egy int típusú változót, és írd ki az értékét. Figyeld meg mi egy változó kezdőértéke!
-3. - Adj új értéket az előző változónak (lehet konstans vagy scanf-el beolvasva a billentyűzetről), majd írd ki, hogy a változó értéke páros vagy páratlan.
-4. - Írd ki, hogy a szám pozitív, negatív, vagy nulla-e.
-5. - Próbálj meg értékül adni az int típusú változónak egy valós számot, egy karaktert, egy logikai (bool) értéket, és egy stringet. Ha sikerül az értékadás, akkor írd ki a változó értékét. Fordítás közben használd a -W, -Wall, -Wextra kapcsolókat.
-6. - Határozd meg, hogy melyik a legnagyobb és legkisebb ábrázolható egész szám (sizeof). A legnagyobb ábrázolható egész számot tedd egy változóba, majd adj a változóhoz 1-et. Figyeld meg mi lett az eredmény!
-7. - Határozd meg két szám átlagát. Figyelj arra, hogy az eredmény valós szám.
+1. - Deklarálj egy int típusú változót, és írd ki az értékét. Figyeld meg mi egy változó kezdőértéke!
+2. - Adj új értéket az előző változónak (lehet konstans vagy scanf-el beolvasva a billentyűzetről), majd írd ki, hogy a változó értéke páros vagy páratlan.
+3. - Írd ki, hogy a szám pozitív, negatív, vagy nulla-e.
+4. - Próbálj meg értékül adni az int típusú változónak egy valós számot, egy karaktert, egy logikai (bool) értéket, és egy stringet. Ha sikerül az értékadás, akkor írd ki a változó értékét. Fordítás közben használd a -W, -Wall, -Wextra kapcsolókat.
+5. - Határozd meg, hogy melyik a legnagyobb és legkisebb ábrázolható egész szám (sizeof). A legnagyobb ábrázolható egész számot tedd egy változóba, majd adj a változóhoz 1-et. Figyeld meg mi lett az eredmény!
+6. - Határozd meg két szám átlagát. Figyelj arra, hogy az eredmény valós szám.
 
 ### Gyakorló feladatok
 
+10. - Nézzük végig, értelmezzük az alábbi fájlokat:
+    - 1-shock.c
+    - 2-base-types.c
+    - 4-conversion.c
 11. - Az 5. feladat mintájára vizsgáld meg az összes alaptípus közti átjárhatóságot. Minden alaptípus átkonvertálható mindegyik másikra? Ha igen, akkor mi a konverzió szabálya?
 12. - Írd ki két sorban a "Hello" és "world" szavakat, egy printf() hívással. A két szót tedd idézőjelek közé a kimenetben.
 13. - Írj programot, ami bekér egy számot és megfordítja azt. Csak aritmetikai műveleteket használj. Pl.: 12345 -> 54321
