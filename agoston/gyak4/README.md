@@ -2,7 +2,7 @@
 
 ## Kötelező feladatok
 
-- Írjunk egy függvényt, amely (-1)-gyel szorozza a paraméterül kapott számot. Mi történik, ha `unsigned` változót adunk át neki paraméterként?
+- Írjunk egy függvényt, amely (-1)-gyel szorozza a paraméterül kapott számot. Írassuk ki az eredményt. Mi történik, ha `unsigned` változót adunk át neki paraméterként?
 - Fussuk át a C-s tömböket az alábbi gyűjtemény alapján:
   - `1-arrays.c`
   - `2-multi-arrays.c`
