@@ -2,14 +2,12 @@
 
 int main()
 {
-	char temp;
-	char arr[8] = {1, 2, 3, 4, 5, 6, 7, 8};
-	temp = (arr + 1)[2];
+    	int arr2[8] = {1, 2, 3, 4, 5, 6, 7, 8};
+	int temp = (arr2 + 1)[2];
 	printf("%d\n", temp);
-    
-    int arr2[8] = {1, 2, 3, 4, 5, 6, 7, 8};
-	temp = (arr2 + 1)[2];
-	printf("%d\n", temp);
-    
-    return 0;
+   
+	printf("arr2: %p\n", arr2);
+	printf("arr2 + 1: %p\n", arr2 + 1);
+
+    	return 0;
 }
