@@ -8,7 +8,7 @@
   - Írd ki az alma szót tartalmazó szavakat (pl. dalmata, almafa) (`strstr`).
   - Vizsgáld meg, hogy szerepel-e a beolvasott szavak között a "cica" szó (`strcmp`).
   - Írd ki a számjegyeket tartalmazó szavakat (`strpbrk`).
-- Mi történik?
+1. Mi történik?
   - `what-0.c`
   - `what-1.c`
   - `what-2.c`
