@@ -2,12 +2,12 @@
 
 ## Kötelező feladatok
 
-- Készíts egy programot, ami a standard bemenetről szavakat olvas (ha már ismered a fájlkezelő műveleteket, fájlból is olvashatod a szavakat). Az alábbi feladatok megoldásához használj standard string függvényeket (`#include <string.h>`).
-- Írd ki az 5 karakternél hosszabb szavakat (`strlen`).
-- Írd ki az x karaktert tartalmazó szavakat (`strchr`).
-- Írd ki az alma szót tartalmazó szavakat (pl. dalmata, almafa) (`strstr`).
-- Vizsgáld meg, hogy szerepel-e a beolvasott szavak között a "cica" szó (`strcmp`).
-- Írd ki a számjegyeket tartalmazó szavakat.
+1. Készíts egy programot, ami a standard bemenetről szavakat olvas (ha már ismered a fájlkezelő műveleteket, fájlból is olvashatod a szavakat). Az alábbi feladatok megoldásához használj standard string függvényeket (`#include <string.h>`).
+  - Írd ki az 5 karakternél hosszabb szavakat (`strlen`).
+  - Írd ki az x karaktert tartalmazó szavakat (`strchr`).
+  - Írd ki az alma szót tartalmazó szavakat (pl. dalmata, almafa) (`strstr`).
+  - Vizsgáld meg, hogy szerepel-e a beolvasott szavak között a "cica" szó (`strcmp`).
+  - Írd ki a számjegyeket tartalmazó szavakat (`strpbrk`).
 - Mi történik?
   - `what-0.c`
   - `what-1.c`
@@ -15,8 +15,8 @@
   - `what-3.c`
   - `what-4.c`
   - `what-5.c`
-  - `what-6.c`
-  - `what-7.c`
+  - (`what-6.c`)
+  - (`what-7.c`)
 - Parancssori argumentumok kezelése: `2-command-line-args.c`
 - Írjuk ki a parancssori argumentumok számát. Miért nem lesz ez a szám kevesebb mint 1?
 - Írjunk egy olyan szorzást végző programot, amely egy számlálós ciklusban összeadja az "első" paraméterül kapott számot a "második" paraméter értékeszer, majd a végeredményt kiírja a konzolra. (tipp: nézz utána az `atoi` függvénynek)
@@ -32,7 +32,7 @@
 
 ## Gyakorló feladatok
 
-- Írjunk egy programot, ami egy tetszőleges tartalmat ír egy fájlba. A fájl írása után ne zárjuk le a fájlt, hanem rakjunk egy beolvasást, ami megakasztja a programot. Nézzük meg, hogy mit tartalmaz a fájl. (Ha `ssh`-n keresztül dolgozunk, akkor nyissunk egy új ssh kapcsolatot.) Engedjük tovább a programot, hogy fusson végig, majd nézzük meg ismét, hogy mi a fájl tartalma!
+1. Írjunk egy programot, ami egy tetszőleges tartalmat ír egy fájlba. A fájl írása után ne zárjuk le a fájlt, hanem rakjunk egy beolvasást, ami megakasztja a programot. Nézzük meg, hogy mit tartalmaz a fájl. (Ha `ssh`-n keresztül dolgozunk, akkor nyissunk egy új ssh kapcsolatot.) Engedjük tovább a programot, hogy fusson végig, majd nézzük meg ismét, hogy mi a fájl tartalma!
 - Írjuk meg a keresés tételét egy hátultesztelős ciklussal! Adjuk vissza a tömbnek azt az indexét, ahol található a keresett elem. Találat esetén lépjünk ki a ciklusból (`break`).
 - Írjuk meg a `toLowerCase` függvényt. A függvény kapjon egy karaktertömböt, és minden nagybetűjét (ASCII táblázatban kikereshető, hogy mely nagybetűs karaktereknek mi az értéke) írjuk át a neki megfelelő kisbetűre! Ezt követően írjuk ki, hogy milyen betűt módosítottunk. Ha nem kell módosítani a karakteren, akkor ne csináljuk a karakterrel semmit (`continue`).
 - Írjunk programot mely a standard inputról beolvasott stringben megkeresi a magánhangzókat és azokat eggyel eltolja (`a->e`, `e->i`, `i->o`, `o->u`, `u->a`), minden mást változatlanul hagy. A megoldásod szervezd úgy, hogy legyen egy `change` nevű függvényed mely egyetlen karaktert dolgoz fel: cseréli ha szükséges vagy változatlan hagyja, majd ezt visszaadja. Adj több megoldást az alábbiak szerint:
