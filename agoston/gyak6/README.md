@@ -3,27 +3,27 @@
 ## Kötelező feladatok
 
 1. Készíts egy programot, ami a standard bemenetről szavakat olvas (ha már ismered a fájlkezelő műveleteket, fájlból is olvashatod a szavakat). Az alábbi feladatok megoldásához használj standard string függvényeket (`#include <string.h>`).
-  - Írd ki az 5 karakternél hosszabb szavakat (`strlen`).
-  - Írd ki az x karaktert tartalmazó szavakat (`strchr`).
-  - Írd ki az alma szót tartalmazó szavakat (pl. dalmata, almafa) (`strstr`).
-  - Vizsgáld meg, hogy szerepel-e a beolvasott szavak között a "cica" szó (`strcmp`).
-  - Írd ki a számjegyeket tartalmazó szavakat (`strpbrk`).
+  * Írd ki az 5 karakternél hosszabb szavakat (`strlen`).
+  * Írd ki az x karaktert tartalmazó szavakat (`strchr`).
+  * Írd ki az alma szót tartalmazó szavakat (pl. dalmata, almafa) (`strstr`).
+  * Vizsgáld meg, hogy szerepel-e a beolvasott szavak között a "cica" szó (`strcmp`).
+  * Írd ki a számjegyeket tartalmazó szavakat (`strpbrk`).
 1. Mi történik?
-  - `what-0.c`
-  - `what-1.c`
-  - `what-2.c`
-  - `what-3.c`
-  - `what-4.c`
-  - `what-5.c`
-  - (`what-6.c`)
-  - (`what-7.c`)
+  * `what-0.c`
+  * `what-1.c`
+  * `what-2.c`
+  * `what-3.c`
+  * `what-4.c`
+  * `what-5.c`
+  * (`what-6.c`)
+  * (`what-7.c`)
 1. Parancssori argumentumok kezelése: `2-command-line-args.c`
 1. Írjuk ki a parancssori argumentumok számát. Miért nem lesz ez a szám kevesebb mint 1?
 1. Írjunk egy olyan szorzást végző programot, amely egy számlálós ciklusban összeadja az "első" paraméterül kapott számot a "második" paraméter értékeszer, majd a végeredményt kiírja a konzolra. (tipp: nézz utána az `atoi` függvénynek)
 1. Írjuk meg a faktoriális műveletet rekurzió segítségével. Magyarázzuk el a rekurzív függvények két fő komponensét (termináló eset, és rekurziót hívó eset). `rec-sample.c`
 1. Filekezelés:
-  - `0-write.c`
-  - `1-read.c`
+  * `0-write.c`
+  * `1-read.c`
 1. Írjuk egy programot, ami eltárolja a nevünket egy "player.txt" nevű fájlban.
 1. Írjunk egy programot, amely egy egész számokat tartamalzó tömb páros számait beleírja egy "even_numbers.txt" nevű fájlba. Futtassuk le újra a programot, és nézzük meg, hogy bővült-e a fájl tartalma. (Nem fog, ha `"w"`-vel vagy `"w+"`-al nyitottuk meg)
 1. Módosítsuk az előző programot úgy, hogy a fájl tartalmának felülírása helyett kibővül a fájl az újabb kiírni kívánt adatokkal.
@@ -36,12 +36,12 @@
 1. Írjuk meg a keresés tételét egy hátultesztelős ciklussal! Adjuk vissza a tömbnek azt az indexét, ahol található a keresett elem. Találat esetén lépjünk ki a ciklusból (`break`).
 1. Írjuk meg a `toLowerCase` függvényt. A függvény kapjon egy karaktertömböt, és minden nagybetűjét (ASCII táblázatban kikereshető, hogy mely nagybetűs karaktereknek mi az értéke) írjuk át a neki megfelelő kisbetűre! Ezt követően írjuk ki, hogy milyen betűt módosítottunk. Ha nem kell módosítani a karakteren, akkor ne csináljuk a karakterrel semmit (`continue`).
 1. Írjunk programot mely a standard inputról beolvasott stringben megkeresi a magánhangzókat és azokat eggyel eltolja (`a->e`, `e->i`, `i->o`, `o->u`, `u->a`), minden mást változatlanul hagy. A megoldásod szervezd úgy, hogy legyen egy `change` nevű függvényed mely egyetlen karaktert dolgoz fel: cseréli ha szükséges vagy változatlan hagyja, majd ezt visszaadja. Adj több megoldást az alábbiak szerint:
-  - A string feldolgozását különböző ciklusokkal old meg (`for`, `while`, `do`-`while`) - törekedj minél kompaktabb megoldásokra
-  - A `change` függvényt valósítsd meg:
-    - verzió: tisztán `if`-ek használatával
-    - verzió: `switch`-`case` használatával
-    - verzió: 2 tömb (`from`, `to`) használatával, melyekben előre rögzítve vannak a cserélendő karakter párok
-    - verzió: 1 tömb használatával hogyan oldható meg?
+  * A string feldolgozását különböző ciklusokkal old meg (`for`, `while`, `do`-`while`) - törekedj minél kompaktabb megoldásokra
+  * A `change` függvényt valósítsd meg:
+    * verzió: tisztán `if`-ek használatával
+    * verzió: `switch`-`case` használatával
+    * verzió: 2 tömb (`from`, `to`) használatával, melyekben előre rögzítve vannak a cserélendő karakter párok
+    * verzió: 1 tömb használatával hogyan oldható meg?
 1. Készíts egy programot, ami kiírja egy fájl n-edik sorát. A fájl nevét és az n értéket parancssori argumentumként lehessen megadni.
 
 ## Haladó feladatok
