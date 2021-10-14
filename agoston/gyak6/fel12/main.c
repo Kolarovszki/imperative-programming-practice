@@ -20,7 +20,7 @@ int main(){
     printf("\nNormal logging:\n\n");
     logging(0, "program started.");
     logging(4, "user signed in.");
-    logging(2, "could not connect to server.");
+    logging(2, conErrMsg);
     
     printf("\nWithout default:\n\n");
     loggingWithoutDefault(0, "program started.");
