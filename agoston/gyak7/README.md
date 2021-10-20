@@ -2,7 +2,20 @@
 
 ## Kötelező feladatok
 
-1. Lokális, globális, formális változók:
+1. Deklarálj és definiálj egy változót a main függvényen kívül!
+Változtasd az értékét és írasd ki!
+2. Készíts egy függvényt, benne deklarálj és definiálj egy változót! El tudod érni a változót a függvényen kívül?
+3. Írj egy elágazást az előző feladatban megírt függvénybe a változó definíció után! Vizsgáld meg, hogy a változót eléred-e az if feltételében, valamint az igaz blokkjában, továbbá opcionálisan az else és else if ágában!
+4. Deklarálj és definiálj változót egy if bármelyik ágában, vagy egy tetszőleges ciklus magjában! Vizsgáld meg, hogy a változót eléred-e a blokkon kívül!
+5. Hozz létre egymásba ágyazott scope-okat ("{}" párok közti blokkokat), vezess be mindegyikben egy változót! Vizsgáld, hogy melyik scope-ból melyik változókat éred el! Mikor lehet érdemes scope-okat használni?
+6. Deklarálj egy két változós függvényt ugyanazon változónevet használva a két paraméternek! Mi történik?
+7. Hozz létre egy függvényt, deklarálj és definiálj benne egy static változót! Növeld meg a változó értékét és írasd ki! Hívd meg a main-ben többször is a függvényt! Mi történik?
+8. Írj egy swap függvényt, amely megcseréli két int változó értékét!
+9. Írj egy olyan függvényt, amely két int pointert vár paraméterül és visszaadja a nagyobb értékre mutató pointert!
+10. A következő feladat csak GCC fordítóval megoldható: módosítsd a swap feladatot úgy, hogy a függvényt a main-en belül deklarálod és definiálod! Mikor lehet ez a funkcionalitás hasznos?
+11. Hozz létre egy my_utils.h és my_utils.c fájlt! A 8. és 9. feladatban létrehozott függvények deklarációit helyezd a header file-ba, a definícióit pedig a c fájlba. Egy main.c fájlban include-old a headert, majd a main-ben hívd a függvényeket! Fordítsd és futtasd a kódod!
+12. Hozz létre további függvényeket a my_utils.c file-ban! A függvények hivatkozzanak egymásra! Ezeket a függvényeket meg tudod hívni a main.c fájlban is? Miért? Miért nem?
+13. Lokális, globális, formális változók:
   - 0-local-global-formal.c
 Láthatóság. Mit csinál a program?
   - what-0.c
@@ -12,20 +25,7 @@ Láthatóság. Mit csinál a program?
   - what-4.c
   - what-5.c
   - what-6a.c, what-6b.c, what-6c.c
-2. Deklarálj és definiálj egy változót a main függvényen kívül!
-Változtasd az értékét és írasd ki!
-3. Készíts egy függvényt, benne deklarálj és definiálj egy változót! El tudod érni a változót a függvényen kívül?
-4. Írj egy elágazást az előző feladatban megírt függvénybe a változó definíció után! Vizsgáld meg, hogy a változót eléred-e az if feltételében, valamint az igaz blokkjában, továbbá opcionálisan az else és else if ágában!
-5. Deklarálj és definiálj változót egy if bármelyik ágában, vagy egy tetszőleges ciklus magjában! Vizsgáld meg, hogy a változót eléred-e a blokkon kívül!
-6. Hozz létre egymásba ágyazott scope-okat ("{}" párok közti blokkokat), vezess be mindegyikben egy változót! Vizsgáld, hogy melyik scope-ból melyik változókat éred el! Mikor lehet érdemes scope-okat használni?
-7. Deklarálj egy két változós függvényt ugyanazon változónevet használva a két paraméternek! Mi történik?
-8. Hozz létre egy függvényt, deklarálj és definiálj benne egy static változót! Növeld meg a változó értékét és írasd ki! Hívd meg a main-ben többször is a függvényt! Mi történik?
-9. Írj egy swap függvényt, amely megcseréli két int változó értékét!
-10. Írj egy olyan függvényt, amely két int pointert vár paraméterül és visszaadja a nagyobb értékre mutató pointert!
-11. A következő feladat csak GCC fordítóval megoldható: módosítsd a swap feladatot úgy, hogy a függvényt a main-en belül deklarálod és definiálod! Mikor lehet ez a funkcionalitás hasznos?
-12. Hozz létre egy my_utils.h és my_utils.c fájlt! A 9. és 10. feladatban létrehozott függvények deklarációit helyezd a header file-ba, a definícióit pedig a c fájlba. Egy main.c fájlban include-old a headert, majd a main-ben hívd a függvényeket! Fordítsd és futtasd a kódod!
-13. Hozz létre további függvényeket a my_utils.c file-ban! A függvények hivatkozzanak egymásra! Ezeket a függvényeket meg tudod hívni a main.c fájlban is? Miért? Miért nem?
-
+  
 ## Gyakorló feladatok
 
 1. Deklarálj és definiálj egy változót egy ciklus magjában, majd ágyazz be egy második ciklust és vizsgáld, hogy azon belül eléred-e a külső ciklusban deklarált változót!
