@@ -3,7 +3,7 @@
 Ezen a héten nincs igazi új anyag, egy picit komplexebb, de csak az eddigi anyagrészeket lefedő feladatot állítottunk nektek össze. Ezt önállóan kellene megoldani a gyakorlat idejében (persze segítséget kérni, kérdezni ér:) ), majd feltölteni Canvasbe a megoldást, hogy én is meg tudjam nézni. A félév végi értékelésbe semmilyen módon nem számít bele!
 
 ## Csináljunk egy aknakereső játékot!
-A pálya mérete legyen fix 10 * 10-es, a sorok legyenek A-J-ig jelölve, az oszlopok 0-9-ig, a mezők kezdetben üresek.
+A pálya mérete legyen fix 10 * 10-es, a sorok legyenek `A`-`J`-ig jelölve, az oszlopok `0`-`9`-ig, a mezők kezdetben üresek.
 
 ```
   0 1 2 3 4 5 6 7 8 9
@@ -19,9 +19,9 @@ I
 J
 ```
 
-A program során két táblára lesz szükségünk, egyre, amiben az adatokat tároljuk és egyre, amiben csak a felfedett mezőket tároljuk (néhány gyakorlat múlva ezt egyszerűsíthetjük struct-ok használatával ;) )
+A program során két táblára lesz szükségünk, egyre, amiben az adatokat tároljuk és egyre, amiben csak a felfedett mezőket tároljuk (néhány gyakorlat múlva ezt egyszerűsíthetjük `struct`-ok használatával ;) )
 Írjunk egy függvényt, ami paraméterben átadott táblát kirajzol a fenti módon!
-A pálya legyen 10x10-es, egészekből álló mátrix. Próbáld ki int[][] ábrázolással és sorfolytonos int[] reprezentációval is!
+A pálya legyen 10x10-es, egészekből álló mátrix. Próbáld ki `int[][]` ábrázolással és sorfolytonos `int[]` reprezentációval is! (Használd a kényelmesebb változatot!)
 Írjunk egy függvényt, ami véletlenszerűen elhelyez N aknát a táblán, figyelve arra, hogy ne helyezze olyan helyre, ahol már van akna.
 Az aknák számát kérjük be parancsori paraméterként és ezt adjuk át az előző függvénynek. Az aknák száma ne lehessen 3-nál kevesebb és 30-nál több!
 Írjunk egy függvényt, ami a pályán kitölti a "számokat", azaz minden olyan mezőre, ami nem akna, kitölti, hogy hány akna van a szomszédos mezőkön.
