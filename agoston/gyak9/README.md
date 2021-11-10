@@ -4,7 +4,7 @@
 
 ### Példakódok
 
-- 0-heap.c
+- [0-heap.c](0-heap.c)
 - 3-realloc.c
 - what-0.c
 - what-1.c
