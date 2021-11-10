@@ -5,11 +5,11 @@
 ### Példakódok
 
 - [0-heap.c](0-heap.c)
-- 3-realloc.c
-- what-0.c
-- what-1.c
-- what-2.c
-- what-3.c
+- [3-realloc.c](3-realloc.c)
+- [what-0.c](what-0.c)
+- [what-1.c](what-1.c)
+- [what-2.c](what-2.c)
+- [what-3.c](what-3.c)
 
 ### Kötelező feladatok
 
