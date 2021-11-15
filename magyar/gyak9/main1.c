@@ -4,7 +4,7 @@
 
 
 int main() {
-    char input[20];
+    char input[21];
 
     printf("Input: ");
 
@@ -14,7 +14,7 @@ int main() {
 
     size_t length = strlen(input);
 
-    char* masolat = malloc(length * sizeof(char));
+    char* masolat = malloc((length + 1) * sizeof(char));
 
     if (masolat == NULL) {
         perror("Nincs eleg memoria!");

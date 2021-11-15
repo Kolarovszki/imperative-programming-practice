@@ -16,7 +16,7 @@ char* readWord() {
 
     int length = strlen(input);
 
-    char* new_str = malloc(length * sizeof(char));
+    char* new_str = malloc((length + 1) * sizeof(char));
 
     if (new_str == NULL) {
         perror("Nincs elég memória!");

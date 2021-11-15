@@ -8,7 +8,7 @@
 char* reversed(char* str) {
     size_t length = strlen(str);
     
-    char* uj_str = malloc(length * sizeof(char));
+    char* uj_str = malloc((length + 1) * sizeof(char));
 
     if (uj_str == NULL) {
         perror("Nincs eleg memoria!");
@@ -21,12 +21,14 @@ char* reversed(char* str) {
         uj_str[i] = str[length - i - 1];
     }
 
+    uj_str[length] = '\0';
+
     return uj_str;
 }
 
 
 int main() {
-    char input[20];
+    char input[21];
 
     printf("Input: ");
 

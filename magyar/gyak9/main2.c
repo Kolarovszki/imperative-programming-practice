@@ -24,7 +24,7 @@ char* reversed(char* str) {
 
 
 int main() {
-    char input[20];
+    char input[21];
 
     printf("Input: ");
 
