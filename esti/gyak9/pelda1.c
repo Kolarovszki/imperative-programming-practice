@@ -58,11 +58,14 @@ int main(void){
         scanf("%d", &buffer);
     }
     
+    /* print all the numbers in reverse order */
     for (int i = counter - 1; i >= 0; i--){
         printf("%d : %d\n", i, arr[i]);
     }
     
+    /* freeing dynamic allocated array */
     free(arr);
     
-
+    /* successful run */
+    return 0;
 }
