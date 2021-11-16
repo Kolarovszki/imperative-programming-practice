@@ -1,3 +1,7 @@
+/* A feladat, amelyhez a programot írtam:
+Olvassunk be egész számokat addig, amíg a felhasználó pozitív számokat ír be.
+Az első nempozitív szám után írjuk ki visszafelé sorrendben az összes beírt számot az indexükkel együtt. */
+
 #include <stdio.h>
 #include <stdlib.h>
 
