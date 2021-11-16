@@ -31,10 +31,13 @@ int main(void){
     
         if (counter < arrCapacity){
             /* we have space for new elem in arr */
+            
+            /* filling the buffer into the right place and increase counter */
             arr[counter++] = buffer;
         }else{
             /* we have to increase size of arr */
             arrCapacity += increaseCapacity;
+            
             /* with realloc all the available data is copied into the new place */
             /* sometimes it does not have to be copied since it can be increased in place */
             arr = (int *)realloc(
@@ -47,9 +50,11 @@ int main(void){
                 exit(1);
             }
             
+            /* filling the buffer into the right place and increase counter */
             arr[counter++] = buffer;
         }
         
+        /* next input */
         scanf("%d", &buffer);
     }
     
