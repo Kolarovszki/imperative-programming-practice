@@ -16,6 +16,7 @@
 - [7. gyakorlat](gyakorlatok/gyak7)
 - [8. gyakorlat](gyakorlatok/gyak8)
 - [9. gyakorlat](gyakorlatok/gyak9)
+- [10. gyakorlat](gyakorlatok/gyak10)
 
 ## Hasznos anyagok
 
@@ -23,6 +24,7 @@
 
 - [InfoC](https://infoc.eet.bme.hu/)
 
+- [CodinGame](https://www.codingame.com/home)
 
 # Imperative programming practice
 
