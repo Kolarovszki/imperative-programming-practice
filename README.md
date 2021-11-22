@@ -4,6 +4,7 @@
 
 - [7. gyakorlat elméleti összefoglalója](elmelet/gyak7)
 - [9. gyakorlat elméleti összefoglalója](elmelet/gyak9)
+- [10. gyakorlat elméleti összefoglalója](elmelet/gyak10)
 
 ## Gyakorlatok
 
