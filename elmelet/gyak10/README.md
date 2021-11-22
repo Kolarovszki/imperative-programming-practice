@@ -106,9 +106,63 @@ void print_hello();
 
 Ez azért szükséges, hogy a fájlban deklarált változók ne legyenek mégegyszer deklarálva.
 
-*Megjegyzés*: függvények újradeklarálása igazából nem nagy probléma, de lesz majd olyan
+*Megjegyzés 1*: függvények újradeklarálása igazából nem nagy probléma, de lesz majd olyan
 hogy definíciókat is rakunk a header fájlokba, és az újradefiníció már hibát okoz
 fordítás során.
+
+*Megjegyzés 2*: A `.c` fájlok (fordítási egységek) külön fordulnak, és csak később lesznek összelinkelve. Ezért az include guard csak fordítási egységekként érvényes.
+
+## `extern` kulcsszó
+
+Tegyük fel hogy egy globális változót definiálunk egy header fileban!
+
+```c
+// my_header.h
+#ifndef MY_HEADER
+#define MY_HEADER
+
+int my_global;
+
+#endif
+```
+A fentebbi globális változó *definiálva* van, de *nincs inicializálva*.
+Azaz van értéke, helyet foglal a memóriában, de az memóriaszemét. Tehát ha ezt a
+változót szeretnénk használni 2 különböző fordítási egységben (tehát `.c` fájlban),
+akkor 2-szer lesz definiálva a változó, fordítási hibát kapunk.
+
+Ha szeretnénk globális változót *deklarálni*, akkor ezt a következőképpen kell írnunk:
+```c
+// my_header.h
+#ifndef MY_HEADER
+#define MY_HEADER
+
+extern int my_global;
+
+#endif
+```
+
+Ezzel szólunk a fordítónak, hogy lesz majd egy ilyen változó, de még nincs lefoglalva
+hozzá memóriaterület. Ahhoz hogy használjuk, az egyik forrásfájlban deklarálnunk kell:
+
+```c
+// main.c
+#include "my_header.h"
+
+int my_global;
+
+int main() {
+    ...
+}
+```
+
+**Megjegyzés 1**: Kerüld a globális változókat!
+
+**Megjegyzés 2**: Az `extern` kulcsszót csak header fájlokban használd.
+
+**Megjegyzés 3**: Szokás függvények elé is `extern` kulcsszót írni, viszont a
+függvényeknél az extern kulcsszó implicit, nem kell külön leírni.
+Lényeges viszont, hogy a "sima" változóknál az `extern` kulcsszó nem implicit, ki kell
+írni.
 
 ## Függvény mint függvényparaméter
 
