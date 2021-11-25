@@ -11,9 +11,9 @@ int main()
     enum week day; 
     day = Wed; 
     
-    printf("%d",day); 
+    printf("%d\n",day); 
     
-    printf("%d, %d, %d", Working, Failed, Freezed);
+    printf("%d, %d, %d\n", Working, Failed, Freezed);
     
     return 0; 
 }  
