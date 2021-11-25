@@ -18,6 +18,7 @@
 - [8. gyakorlat](gyakorlatok/gyak8)
 - [9. gyakorlat](gyakorlatok/gyak9)
 - [10. gyakorlat](gyakorlatok/gyak10)
+- [11. gyakorlat](gyakorlatok/gyak11)
 
 ## Hasznos anyagok
 
