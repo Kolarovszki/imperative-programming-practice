@@ -89,6 +89,7 @@ int main() {
     PersonType lajos = {1, "Lajos", "lajos@lajosmail.hu", Python};
 
     printf("Hello, %s!\n", lajos.name);
+    printf("Preferred language: %d\n", lajos.preferred_language);
 
     return 0;
 }
@@ -108,7 +109,8 @@ a nyelveket intekkel reprezentáljuk, a következőképpen:
 PersonType lajos = {1, "Lajos", "lajos@lajosmail.hu", 2};
 ```
 
-ami nem túl olvasható.
+ami nem túl olvasható. De igazából pontosan ugyanez történik a motorháztető alatt, a
+felsorolási típus igazából intek sorozata.
 
 **Megjegyzés 1**:
 
