@@ -1,5 +1,7 @@
 # 11. óra
 
+[11. gyakorlat elméleti összefoglalója](../../elmelet/gyak11)
+
 ## Típuskonstrukciók
 
 - [`enum`](0-enum.c)
