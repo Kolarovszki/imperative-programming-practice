@@ -36,6 +36,8 @@ Mit csinál a kód?
 1. A korábbi órán megírt mátrixszorzáshoz, hozzunk létre egy `Matrix` típust, mely tartalmazza a mátrix dimenzióinak méretet, illetve a tömb első elemére mutatót adattagként.
 1. Az indexelés könnyítése érdekében írjunk egy `at` függvényt mely vár egy mátrix példányra mutatót, sor és oszlop indexet, ezek alapján visszatér a indexek által jelölt elemre mutatóval.
 1. Alakítsuk át a mátrixszorzást ezek segítségével.
+1. Írj egy kétparaméteres függvényt, amely az első paramétere szerint kiírja a másodikat! Az egyik paramétere egy union típus, amelynek lehet `int`, `char`, `float`, és `Bool` típusú értékei! (A `Bool` típust definiáld a `typedef` kulcsszóval egészként!) A másik paramétere pedig egy karaktersorozat, amely szerint kell kiíratni a beérkezett union típust! (Pl. ha az átadott érték `"%i"`, akkor `int` típusnak értelmezze, ha `"%c"`, akkor `char` típusként értelmezze, ha `"%f"`, akkor `float`-ként értelmezze, ha `"%B"`, akkor `Bool`ként értelmezze (Ekkor a kiírás legyen `"True"` és `"False"`! Írj hozzá példát minden lehetséges típussal!
+1. Az előző feladatot alakítsd át úgy, hogy az union típusú paramétere egy tömb legyen, és a másik paraméter álatl megadott karaktersorozat határozza meg, hogy hány eleme van és melyiket hogyan írja ki! Mutasd be a függvény használatát egy olyan példaprogramban, ahol minden lehetséges típust használsz, néhol kombinálva. (Opionálisan átírhatod úgy a kiíratást, hogy a nem `%` jellel meghatározott karaktereket írja ki szimplán a standard kimenetre!) Ezzel egy `printf` utasításhoz hasonló függvényt kapsz.
 
 ## Haladó feladatok
 
