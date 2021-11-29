@@ -1,4 +1,4 @@
-# 10. gyakorlat elméleti összefoglalója
+# 11. gyakorlat elméleti összefoglalója
 
 
 ## `struct`
@@ -156,7 +156,7 @@ int main() {
 
 A fenti példában a `4.0` felülírja a `3`-at a memóriában.
 
-## Példányosok dinamikus memóriakezeléssel
+## Példányok dinamikus memóriakezeléssel
 
 Térjünk vissza Lajosra! Így tudunk dinamikusan lefoglalni területet egy `struct`-nak:
 
@@ -200,3 +200,21 @@ Mi ez a `->`, eddig még ilyen nem volt. Ez csak egy rövidítés:
 Tehát a `->` operátor egyszerre két dolgot csinál:
 1. dereferálja a pointert
 2. adattag-elérést
+
+## Random szám generálás
+
+A következő kód mindent elmond:
+```
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL));  // Álvéletlenszám-generáló seedelése
+
+    int my_random_int = rand();  // egészek [0, RAND_MAX) intervallumon
+    int my_smaller_random_int = rand() % 100;  // egészek [0, 100) intervallumon
+    /// double-ök [0, 5) intervallumon
+    double my_random_double = 5 * ((double) rand()) / RAND_MAX;
+
+    return 0;
+}
