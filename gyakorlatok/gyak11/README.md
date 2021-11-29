@@ -24,10 +24,10 @@ Mit csinál a kód?
 1. Hozzunk létre egy függvényt mely egy `Student` tömböt kap és visszaadja a legmagasabb átlagú hallgatónak az azonosítóját.
 1. Kezeljük külön a BSc-s, MSc-s és PhD-s hallgatókat, erre hozzunk létre egy felsoroló típust (enum) `Type` néven és adjuk hozzá a Student-hez adattagként.
 1. A hallgató típusától függően tároljunk különböző plusz adatokat egy union típus segítségével.
-  - BSc: összesen hallgatott kurzusok száma(int).
-  - MSc: az összesített korrigált kreditindex(double)
-  - PhD: legmagasabb impakt faktorú folyóiratnak az impakt faktora, melybe publikált(double), illetve Erdős számát(int) egy struct segítségével.
-  - Vizsgáljuk meg a típus memóriaszükségletét és vessük össze, mi lett volna ha struct-ot használunk helyette.
+  * BSc: összesen hallgatott kurzusok száma(int).
+  * MSc: az összesített korrigált kreditindex(double)
+  * PhD: legmagasabb impakt faktorú folyóiratnak az impakt faktora, melybe publikált(double), illetve Erdős számát(int) egy struct segítségével.
+  * Vizsgáljuk meg a típus memóriaszükségletét és vessük össze, mi lett volna ha struct-ot használunk helyette.
 1. Írjunk egy függvényt(student_init) mely egy `Type` paramétert kapva, létrehoz a heap-en egy `Student` példányt a megfelelő `Type`-al, a megfelelő adattagokat feltölti random adatokkal, majd visszaad egy mutatót a példányra.
 1. Töltsünk fel egy tömböt ilyen `Student` példányokra mutatókkal, majd módosítsuk a 3-as feladatban irt függvényt, hogy azonosító helyett a példányra mutatót adjon vissza. Ügyeljünk a memóriaszivárgásra.
 
