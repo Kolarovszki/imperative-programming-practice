@@ -1,5 +1,8 @@
 # Imperatív programozás gyakorlat
 
+## Próba ZH feladat
+* [Próba ZH](gyakorlatok/gyak13)
+
 ## Elméleti összefoglalók
 
 - [7. gyakorlat elméleti összefoglalója](elmelet/gyak7)
@@ -20,6 +23,7 @@
 - [9. gyakorlat](gyakorlatok/gyak9)
 - [10. gyakorlat](gyakorlatok/gyak10)
 - [11. gyakorlat](gyakorlatok/gyak11)
+- [12. gyakorlat](gyakorlatok/gyak12)
 
 ## Hasznos anyagok
 
