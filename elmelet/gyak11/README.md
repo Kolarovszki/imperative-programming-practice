@@ -195,7 +195,7 @@ int main() {
 
 Mi ez a `->`, eddig még ilyen nem volt. Ez csak egy rövidítés:
 ```c
-*(person).id == person->id
+(*person).id == person->id
 ```
 Tehát a `->` operátor egyszerre két dolgot csinál:
 1. dereferálja a pointert
