@@ -12,7 +12,7 @@ int get_line(FILE* fp, char** line_ptr) {
     char* line = malloc(COLUMNBUFFER * sizeof(char));
 
     if (line == NULL) {
-        perror("Nincs eleg memoria!");
+        fprintf(stderr, "Nincs eleg memoria!");
         exit(1);
     }
 
@@ -27,19 +27,19 @@ int get_line(FILE* fp, char** line_ptr) {
             line = realloc(line, current_size * sizeof(char));
 
             if (line == NULL) {
-                perror("Nincs eleg memoria!");
+                fprintf(stderr, "Nincs eleg memoria!");
                 exit(1);
             }
         }
 
         line[index] = c;
         index++;
-        
+
         c = fgetc(fp);
     }
 
     line[index] = '\0';
-    
+
     *line_ptr = line;
 
     if (c == EOF)
@@ -53,14 +53,14 @@ int main() {
     char** lines = malloc(ROWBUFFER * sizeof(char*));
 
     if (lines == NULL) {
-        perror("Nincs eleg memoria!");
+        fprintf(stderr, "Nincs eleg memoria!");
         exit(1);
     }
 
     FILE* fp = fopen("example-file.txt", "r");
 
     if (fp == NULL) {
-        perror("Nem lehet megnyitni a fajlt!");
+        fprintf(stderr, "Nem lehet megnyitni a fajlt!");
         exit(1);
     }
 
@@ -74,7 +74,7 @@ int main() {
             lines = realloc(lines, current_size * sizeof(char*));
         }
     }
-    
+
     size_t number_of_rows = index;
 
     for (index = 0; index < number_of_rows; index++) {

@@ -10,7 +10,7 @@ int get_line(FILE* fp, char* line) {
     int c;
  
     if (line == NULL) {
-        perror("Nincs eleg memoria!");
+        fprintf(stderr, "Nincs eleg memoria!");
         exit(1);
     }
 
@@ -20,7 +20,7 @@ int get_line(FILE* fp, char* line) {
 
     while (c != EOF && c != '\n') {
         if (index == BUFSIZE - 1) {
-            perror("Line is too long!");
+            fprintf(stderr, "Line is too long!");
             exit(1);
         }
 
@@ -45,7 +45,7 @@ int main() {
     FILE* fp = fopen("example-file.txt", "r");
 
     if (fp == NULL) {
-        perror("File could not be opened!");
+        fprintf(stderr, "File could not be opened!");
         exit(1);
     }
 
